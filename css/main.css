@@ -151,10 +151,10 @@ body {
     width: 100%;
     left: 0;
     margin: 0;
-    background: rgba(0, 0, 0, 30%);
+    background: rgba(0, 0, 0, 0.6);
     padding: 15px;
+    z-index: 1;
   }
-
   .landing .header .container .navbar .list-icon {
     display: block;
     height: 100%;
@@ -191,5 +191,35 @@ body {
         top: 105px;
         left: 0;
     }
+}
+
+.landing .rounded {
+  display: flex;
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+}
+
+.landing .rounded div{
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.landing .rounded div:first-child{
+  background-color: white;
+}
+
+.landing .arrows{
+  position: relative;
+  color: white;
+  font-size: x-large;
+  top: 40%;
+  align-items: center;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 /* landing */
