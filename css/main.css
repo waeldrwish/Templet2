@@ -16,6 +16,49 @@ body {
   margin: 0px;
 }
 
+.heading{
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.heading h3{
+  font-size: xx-large;
+  font-weight: 400;
+  position: relative;
+}
+
+.heading p{
+  padding-top: 30px;
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: large;
+  color: #333;
+}
+.heading h3::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+
+.heading h3::after{
+  content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #333;
+    border-radius: 100%;
+    left: 49%;
+    top: 150%;
+    background-color: white;
+}
 .container {
   width: 85%;
   margin: auto;
@@ -143,7 +186,7 @@ body {
   margin-bottom: 0px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
   .landing .header .container .navbar .nav-list {
     display: none;
     position: absolute;
@@ -223,3 +266,22 @@ body {
   justify-content: space-between;
 }
 /* landing */
+
+/* services */
+.service .container .service-grid{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.service .container .service-grid .col div{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.service .container .service-grid .col div h4{
+  color: var(--secondry-color);
+}
