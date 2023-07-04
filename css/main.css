@@ -16,7 +16,7 @@ body {
   margin: 0px;
 }
 
-.heading{
+.heading {
   text-align: center;
   width: 400px;
   margin: auto;
@@ -24,20 +24,20 @@ body {
   position: relative;
 }
 
-.heading h3{
+.heading h3 {
   font-size: xx-large;
   font-weight: 400;
   position: relative;
 }
 
-.heading p{
+.heading p {
   padding-top: 30px;
   line-height: 1.8;
   font-weight: 300;
   font-size: large;
   color: #333;
 }
-.heading h3::before{
+.heading h3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -48,16 +48,16 @@ body {
   width: 120px;
 }
 
-.heading h3::after{
+.heading h3::after {
   content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #333;
-    border-radius: 100%;
-    left: 49%;
-    top: 150%;
-    background-color: white;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  border-radius: 100%;
+  left: 49%;
+  top: 150%;
+  background-color: white;
 }
 .container {
   width: 85%;
@@ -65,10 +65,10 @@ body {
   position: relative;
 }
 
-@media (max-width: 750px){
-    .container{
-        width: 100%;
-    }
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
 }
 /* Global Styles */
 /* landing */
@@ -208,32 +208,32 @@ body {
 }
 /* header */
 
-.landing .text{
-    color: white;
-    background: #19c9fa3d;
-    padding: 25px;
-    width: 50%;
-    position: absolute;
-    top: 35%;
+.landing .text {
+  color: white;
+  background: #19c9fa3d;
+  padding: 25px;
+  width: 50%;
+  position: absolute;
+  top: 35%;
 }
 
-.landing .text h1{
-    font-size: x-large;
-    font-weight: 800;
-    line-height: 1.8;
+.landing .text h1 {
+  font-size: x-large;
+  font-weight: 800;
+  line-height: 1.8;
 }
 
-.landing .text .p{
-    line-height: 1.8;
-    font-weight: 300;
+.landing .text .p {
+  line-height: 1.8;
+  font-weight: 300;
 }
 
-@media(max-width: 750px){
-    .landing .text{
-        width: 100%;
-        top: 105px;
-        left: 0;
-    }
+@media (max-width: 750px) {
+  .landing .text {
+    width: 100%;
+    top: 105px;
+    left: 0;
+  }
 }
 
 .landing .rounded {
@@ -243,7 +243,7 @@ body {
   bottom: 0px;
 }
 
-.landing .rounded div{
+.landing .rounded div {
   width: 20px;
   height: 20px;
   border: 2px solid white;
@@ -251,11 +251,11 @@ body {
   margin: 5px;
 }
 
-.landing .rounded div:first-child{
+.landing .rounded div:first-child {
   background-color: white;
 }
 
-.landing .arrows{
+.landing .arrows {
   position: relative;
   color: white;
   font-size: x-large;
@@ -268,20 +268,75 @@ body {
 /* landing */
 
 /* services */
-.service .container .service-grid{
-  margin-top: 100px;
+
+.service .container .service-grid {
+  margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
-
-.service .container .service-grid .col div{
+.service .container .service-grid .col .col-item {
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+}
+.service .container .service-grid .col .col-item i {
+  margin-right: 50px;
+}
+.service .container .service-grid .col .col-item h4 {
+  color: var(--secondry-color);
+  font-size: larger;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.service .container .service-grid .col .col-item p {
+  line-height: 1.8;
+  font-weight: 300;
 }
 
-.service .container .service-grid .col div h4{
-  color: var(--secondry-color);
+.design {
+  background-image: url(../Images/design-features.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.design img {
+  position: absolute;
+  width: 350px;
+  bottom: -150px;
+  left: 8%;
+}
+
+.design div {
+  position: absolute;
+  color: white;
+  right: 0;
+  top: 20%;
+  width: 50%;
+  background-color: rgb(15 116 143 / 70%);
+  padding: 30px;
+}
+.design div h4 {
+  font-size: x-large;
+  margin: 30px;
+  font-weight: 300;
+}
+
+.design div ul {
+  font-size: larger;
+  line-height: 2.5;
+  list-style: none;
+}
+
+.design div ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+  font-size: large;
 }
