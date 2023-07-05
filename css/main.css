@@ -462,11 +462,13 @@ body {
 .video {
   width: 100%;
   position: relative;
+  margin-top: 100px;
+  padding: 0;
 }
 
 .video video {
   width: 100%;
-  margin-top: 100px;
+  padding: 0;
 }
 
 .video .text {
