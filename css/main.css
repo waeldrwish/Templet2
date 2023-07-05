@@ -347,7 +347,7 @@ body {
   font-size: large;
 }
 
-.design .overly{
+.design .overly {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
@@ -357,11 +357,11 @@ body {
   top: 0;
 }
 
-@media (max-width: 860px){
-  .design div{
+@media (max-width: 860px) {
+  .design div {
     width: 100%;
   }
-  .design img{
+  .design img {
     display: none;
   }
 }
@@ -396,35 +396,35 @@ body {
   justify-content: center;
 }
 
-.portfolio .box .col{
+.portfolio .box .col {
   width: 25%;
   position: relative;
 }
 
 @media (max-width: 768px) {
-  .portfolio .box .col{
+  .portfolio .box .col {
     width: 50%;
   }
 }
 
-.portfolio .box .col div{
+.portfolio .box .col div {
   overflow: hidden;
   position: relative;
 }
-.portfolio .box .col div img  {
+.portfolio .box .col div img {
   max-width: 100%;
   transition: 0.3s;
 }
 
-.portfolio .box .col div img:hover{
+.portfolio .box .col div img:hover {
   transform: rotateZ(3deg) scale(1.1);
 }
 
-.portfolio .box .col div:hover .caption{
+.portfolio .box .col div:hover .caption {
   bottom: 0;
 }
 
-.portfolio .box .col div .caption{
+.portfolio .box .col div .caption {
   position: absolute;
   bottom: -100px;
   padding: 10px;
@@ -435,12 +435,72 @@ body {
   transition: 0.3s;
 }
 
-.portfolio .box .col div .caption h4{
+.portfolio .box .col div .caption h4 {
   padding: 3px;
   margin: 0;
 }
 
-.portfolio .box .col div .caption p{
+.portfolio .box .col div .caption p {
   padding: 3px;
   margin: 0;
+  color: var(--secondry-color);
+  font-weight: 400;
+}
+
+.portfolio a {
+  margin: 25px;
+  padding: 15px;
+  text-decoration: none;
+  background: var(--secondry-color);
+  color: white;
+  font-weight: 400;
+}
+
+/* End potifolio */
+
+/* Start Video */
+.video {
+  width: 100%;
+  position: relative;
+}
+
+.video video {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.video .text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  background-color: rgb(15 116 143 / 70%);
+  padding: 30px;
+}
+
+.video .text h4{
+  color: white;
+  font-weight: 400;
+  font-size: larger;
+  margin: 10px;
+}
+
+.video .text p{
+  color: white;
+  margin: 30px;
+}
+
+.video .text a{
+  text-decoration: none;
+  padding: 15px;
+  color: white;
+  background-color: var(--main-color);
+}
+
+.video .overly{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
