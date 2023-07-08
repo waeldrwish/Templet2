@@ -480,29 +480,96 @@ body {
   padding: 30px;
 }
 
-.video .text h4{
+.video .text h4 {
   color: white;
   font-weight: 400;
   font-size: larger;
   margin: 10px;
 }
 
-.video .text p{
+.video .text p {
   color: white;
   margin: 30px;
 }
 
-.video .text a{
+.video .text a {
   text-decoration: none;
   padding: 15px;
   color: white;
   background-color: var(--main-color);
 }
 
-.video .overly{
+.video .overly {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about .container {
+  overflow: hidden;
+  text-align: center;
+}
+
+.about .container img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+}
+
+.state {
+  background-image: url(../Images/stats.png);
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.state::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  left: 0px;
+}
+
+.state .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15 116 143 / 70%);
+}
+
+.state .container div{
+  color: white;
+  text-align: center;
+  padding: 60px;
+}
+
+.state .container div i{
+  font-size: x-large;
+  position: relative;
+}
+
+.state .container div i::before{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10px;
+}
+
+.state .container div h3{
+  margin-top: 25px;
+  font-size: x-large;
+  font-weight: 600;
 }
